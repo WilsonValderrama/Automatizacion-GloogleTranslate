@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Google Translate" skipped="1" tests="1" time="0.85" timestamp="2023-01-26 08:54:49"><testcase name="Translate from English to Spanish"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Google Translate" skipped="0" tests="1" time="36.34" timestamp="2023-01-31 07:15:29"><testcase name="Translate from English to Spanish"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+co.com.bancolombia.certification.googlesuite.tasks.GoTo.performAs(GoTo.java:14)&#13;
+co.com.bancolombia.certification.googlesuite.stepdefinitions.GoogleTranslateStepDefinitions.thatUserWantsTranslateAWords(GoogleTranslateStepDefinitions.java:36)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

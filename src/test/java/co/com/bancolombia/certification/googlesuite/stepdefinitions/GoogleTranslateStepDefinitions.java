@@ -1,5 +1,7 @@
 package co.com.bancolombia.certification.googlesuite.stepdefinitions;
 
+import co.com.bancolombia.certification.googlesuite.tasks.GoTo;
+import co.com.bancolombia.certification.googlesuite.tasks.OpenTheBrowser;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -30,11 +32,16 @@ public class GoogleTranslateStepDefinitions {
     public void thatUserWantsTranslateAWords() {
         //Precondicion: Estar en google translate
         //1. Abrir navegador en el home de google: http
+        user.wasAbleTo(OpenTheBrowser.on()); //fue capaz de lo usamos en los metodos @Given
+        user.wasAbleTo(GoTo.theApp());
+
     }
 
     @When("^user types the words to be translates from English to Spanish$")
     public void userTypesTheWordsToBeTranslatesFromEnglishToSpanish() {
         //Condiciones: Traducir una palabra de ingles aespañol
+        //user.attemptsTo(Task);  //Intenta hacer lo usamos en el @When
+
     }
 
     @Then("^user sees the word on the screen in the lenguages than user wants$")
